@@ -3,6 +3,7 @@ package p455w0rdslib.util;
 import net.minecraft.entity.item.EntityItem;
 
 public class EntityItemUtils {
+
     public static boolean canPickup(EntityItem item) {
         return item.delayBeforeCanPickup <= 0;
     }

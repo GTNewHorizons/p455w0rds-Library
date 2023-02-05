@@ -1,10 +1,12 @@
 package p455w0rdslib.util;
 
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.relauncher.Side;
 import net.minecraft.server.MinecraftServer;
 
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.relauncher.Side;
+
 public class MCUtils {
+
     public static boolean isSSP() {
         return MinecraftServer.getServer().isSinglePlayer();
     }

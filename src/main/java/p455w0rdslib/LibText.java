@@ -3,6 +3,7 @@ package p455w0rdslib;
 import net.minecraft.util.EnumChatFormatting;
 
 public class LibText {
+
     public static final String RADIO_BARS;
     public static final String LINE_SEP = "==========================";
     public static final String BLACK;

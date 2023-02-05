@@ -5,8 +5,9 @@ import java.util.Map;
 import java.util.UUID;
 
 public class LibRegistry {
-    private static Map<UUID, String> NAME_REGISTRY = new HashMap();
-    private static Map<String, UUID> UUID_REGISTRY = new HashMap();
+
+    private static Map<UUID, String> NAME_REGISTRY = new HashMap<>();
+    private static Map<String, UUID> UUID_REGISTRY = new HashMap<>();
 
     public static Map<UUID, String> getNameRegistry() {
         return NAME_REGISTRY;
@@ -17,7 +18,7 @@ public class LibRegistry {
     }
 
     public static String getPlayerName(UUID uuid) {
-        return (String)NAME_REGISTRY.get(uuid);
+        return NAME_REGISTRY.get(uuid);
     }
 
     public static boolean registerName(UUID uuid, String name) {
@@ -39,7 +40,7 @@ public class LibRegistry {
     }
 
     public static void clearNameRegistry() {
-        NAME_REGISTRY = new HashMap();
-        UUID_REGISTRY = new HashMap();
+        NAME_REGISTRY = new HashMap<>();
+        UUID_REGISTRY = new HashMap<>();
     }
 }
